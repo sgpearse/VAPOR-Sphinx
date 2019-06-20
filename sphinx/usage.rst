@@ -42,6 +42,13 @@ MPAS
 User Interface Basics
 ---------------------
 
+.. _ControllingYourRenderers:
+
+Controlling Your Renderers
+``````````````````````````
+
+Each of Vapor's renderers will create imagery of your variables according to color, opacity, a region of interest, and sometimes a few more specialized parameters.  While each type of renderer is unique, specifying their parameters in Vapor is mostly the same.  All renderers are controlled by the Variables, Appearance, Geometry, and Annotation tabs.
+
 .. _VariablesTab:
 
 Variables Tab
