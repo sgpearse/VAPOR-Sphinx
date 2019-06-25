@@ -29,9 +29,9 @@ VAPOR is a product of the National Center for Atmospheric Research’s Computati
 
    downloads
    quickStartGuide
+   gettingDataIntoVapor
    usage
-   community
-   forDevelopers
+   contactAndContribute
    licenseAndCitation
 ..   usage/renderers
 ..   usage/thegui
