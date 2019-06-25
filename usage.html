@@ -93,6 +93,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#user-interface-basics">User Interface Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#controlling-your-renderers">Controlling Your Renderers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#variables-tab">Variables Tab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#appearance-tab">Appearance Tab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#geometry-tab">Geometry Tab</a></li>
@@ -217,14 +218,16 @@
 </div>
 <div class="section" id="user-interface-basics">
 <h2>User Interface Basics<a class="headerlink" href="#user-interface-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="controlling-your-renderers">
+<span id="controllingyourrenderers"></span><h3>Controlling Your Renderers<a class="headerlink" href="#controlling-your-renderers" title="Permalink to this headline">¶</a></h3>
+<p>Each of Vapor’s renderers will create imagery of your variables according to color, opacity, a region of interest, and sometimes a few more specialized parameters.  While each type of renderer is unique, specifying their parameters in Vapor is mostly the same.  All renderers are controlled by the Variables, Appearance, Geometry, and Annotation tabs.</p>
+</div>
 <div class="section" id="variables-tab">
 <span id="variablestab"></span><h3>Variables Tab<a class="headerlink" href="#variables-tab" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ul class="simple">
-<li>foo</li>
-<li>bar</li>
-</ul>
-</div></blockquote>
+<p>The Variables Tab allows the user to define what variables are used as input to a renderer.  Usually this consists of a single variable that has color and opacity mapped to it through parameters set in the Appearance Tab.</p>
+<p>If users have converted their data into <cite>VDC</cite>, they will find controls that allow different levels of compression to be applied to their renderings.  This is desirable for exploratory reasons, as very large datasets can take a long time to render.  Compressing the data often allows a more interactive eperience, where users can find important observables, color those observables, then finally turn off compression for a final rendering.</p>
+<p>Some renderers operate on a field of vectors, such as the Barb and Flow renderers.  Users should specify the X, Y, and Z vector s that these renderers will use to portray direction.  The field vector values will default to U, V, and W if those variables exist within the data set.</p>
+<p>Renderers such as Barbs and Isosurfaces may be color-mapped according to an extra variable.  For example, a user may want to render an Isosurface of pressure at 500 mb, and color that isosurface according to the humidity field at all points on that surface.</p>
 </div>
 <div class="section" id="appearance-tab">
 <span id="appearancetab"></span><h3>Appearance Tab<a class="headerlink" href="#appearance-tab" title="Permalink to this headline">¶</a></h3>

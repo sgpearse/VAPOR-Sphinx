@@ -2,6 +2,7 @@
 Tutorials
 =========
 
+.. _videos:
 
 Videos 
 ------
@@ -24,9 +25,8 @@ Volume Rendering
 
 .. _usage:
 
-=================
 Usage Guide
-=================
+___________
 
 Vapor3 is comprised of a set of tools called Renderers.  Each Renderer depicts your data in different ways based on your specifications, which you specify through Vapor's user interface.
 
@@ -62,9 +62,6 @@ MPAS
 ````
 
 |
-
-User Interface Basics
----------------------
 
 .. _VariablesTab:
 
