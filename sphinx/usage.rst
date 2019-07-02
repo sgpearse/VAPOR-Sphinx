@@ -37,14 +37,13 @@ Some renderers operate on a field of vectors, such as the Barb and Flow renderer
 Renderers such as Barbs and Isosurfaces may be color-mapped according to an extra variable.  For example, a user may want to render an Isosurface of pressure at 500 mb, and color that isosurface according to the humidity field at all points on that surface.
 
 
-
 .. _appearanceTab:
 
 Appearance Tab
 ``````````````
-The appearance tab controls the color and opacity of the variable being used by your renderer.  This is done primarily through an object known as a Transfer Function in the world of visualization.
+The appearance tab controls the `color <controllingColor>`_ and `opacity <controllingOpacity>`_ of the variable being used by your renderer.  This is done through the Transfer Function.
 
-The Transfer Function consists of a `Probability Density Function (PDF) <https://en.wikipedia.org/wiki/Probability_density_function>`_ of your currently selected variable.  Underneath the PDF is a color bar that designates what colors get applied to your variable's values located directly above it.
+The Transfer Function consists of a `Probability Density Function (PDF) <https://en.wikipedia.org/wiki/Probability_density_function>`_ of your currently selected variable.  Underneath the PDF is a color bar that shows the colors that get applied to the values located directly above it.
 
 .. figure:: transferFunctionDocumentation.png
     :align: center
@@ -54,7 +53,14 @@ The Transfer Function consists of a `Probability Density Function (PDF) <https:/
 
 In the figure above, we can see that our transfer function is operating on the variable P.  The user has chosen to operated on the range -1314.76 to 1268.32.  All values of P less than 1314.76 are colored deep blue.  The coloration transitions into red at the high end of the PDF, until becoming saturated at values of 1268.32 and higher.
 
-We can skew the color distribution being applied to P's PDF by right-clicking on the Colorbar, and clicking "New Color Control Point."
+.. _controllingColor:
+
+Controlling Color
+"""""""""""""""""
+
+By default, all renderers use a color map called CoolWarm.  This color map is arbitrary, and may not suit your needs.  Vapor bundles several other color maps that can be loaded with the "Load TF" button at the top of the tab.
+
+The distribution of your color map can be skewed by right-clicking on the Colorbar, and clicking "New Color Control Point."  These control points will allow us to drag color points back and forth along the color bar.
 
 .. figure:: colorControlPoint.gif
     :align: center
@@ -62,7 +68,12 @@ We can skew the color distribution being applied to P's PDF by right-clicking on
 
     Adding and moving color control points in the Colorbar
 
-The three most important controls on the Transfer Function are the Colorbar, the Opacity Controller, and the Variable Range Selectors.
+These control points may also be given direct color values by either double clicking them, or right-clicking and selecting "Edit color control point".  After a color has been changed, Vapor will interpolate between control points to give a smooth color transition.
+
+
+Controlling Opacity
+"""""""""""""""""""
+
 
 .. _geometryTab:
 
