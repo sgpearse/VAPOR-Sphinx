@@ -27,13 +27,12 @@ VAPOR is a product of the National Center for Atmospheric Research’s Computati
 .. toctree::
    :caption: Contents:
 
-   installation
+   downloads
+   quickStartGuide
+   gettingDataIntoVapor
    usage
-   tutorials
-   community
-   forDevelopers
-   citation
-   license
+   contactAndContribute
+   licenseAndCitation
 ..   usage/renderers
 ..   usage/thegui
 ..   usage/dataconversion

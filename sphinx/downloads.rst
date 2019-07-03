@@ -1,15 +1,8 @@
-.. _installation:
-
-=================
-Installation
-=================
-
-|
-
 .. _downloads:
 
+=========
 Downloads
----------
+=========
 
 Vapor 3.1.0.rc0 
 ```````````````
@@ -66,6 +59,8 @@ Double click on the downloaded .dmg file.  Once the Finder window pops up, drag 
 Run the downloaded .exe file.  A wizard will step you through the installer settings necessary for setup.
 
 |
+
+.. _buildFromSource:
 
 Building From Source
 --------------------
