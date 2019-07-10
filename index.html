@@ -162,10 +162,12 @@
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="downloads.html">Downloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="downloads.html#vapor-3-1-0-rc0">Vapor 3.1.0.rc0</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="downloads.html#installation-instructions">Installation Instructions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="downloads.html#building-from-source">Building From Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="downloads.html#sample-data">Sample Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads.html#current-release-vapor-3-1-0">Current Release: Vapor 3.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads.html#installation-instructions">Installation Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads.html#building-from-source">Building From Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads.html#sample-data">Sample Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads.html#previous-releases">Previous Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="downloads.html#vapor-3-1-0-rc0">Vapor 3.1.0.rc0</a></li>
 </ul>
 </li>
 </ul>
@@ -177,15 +179,36 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="gettingDataIntoVapor.html">Getting Data into Vapor3</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#vapor-data-collection-vdc">Vapor Data Collection (VDC)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#wrf">WRF</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#netcdf-cf">NetCDF-CF</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#mpas">MPAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#importing-data-vs-loading-vdc">Importing data vs Loading VDC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingDataIntoVapor.html#vapor-data-collection-vdc">Vapor Data Collection (VDC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gettingDataIntoVapor.html#wrf-arw-data-to-vdc">WRF-ARW data to VDC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#step-1-create-vdc-metadata-file">Step 1: Create .vdc metadata file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#step-2-the-wavelet-transform">Step 2: The wavelet transform</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gettingDataIntoVapor.html#netcdf-cf-data-to-vdc">NetCDF-CF data to VDC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#coordinate-variables">Coordinate Variables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="gettingDataIntoVapor.html#the-axis-attribute">The <code class="docutils literal notranslate"><span class="pre">axis</span></code> attribute</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gettingDataIntoVapor.html#the-units-attribute">The <code class="docutils literal notranslate"><span class="pre">units</span></code> attribute</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gettingDataIntoVapor.html#vertical-coordinates">Vertical Coordinates</a></li>
+<li class="toctree-l5"><a class="reference internal" href="gettingDataIntoVapor.html#missing-values">Missing Values</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#id1">Step 1: Create .vdc metadata file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#id2">Step 2: The wavelet transform</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gettingDataIntoVapor.html#raw-binary-data-to-vdc">Raw binary data to VDC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#id3">Step 1: Create .vdc metadata file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gettingDataIntoVapor.html#id4">Step 2: The wavelet transform</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Using Vapor 3</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#the-user-interface">The User Interface</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#controlling-your-renderers">Controlling Your Renderers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#controlling-the-renderers">Controlling The Renderers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage.html#variables-tab">Variables Tab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage.html#appearance-tab">Appearance Tab</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="usage.html#controlling-color">Controlling Color</a></li>
@@ -196,25 +219,8 @@
 <li class="toctree-l3"><a class="reference internal" href="usage.html#annotation-tab">Annotation Tab</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#renderers">Renderers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#volume-renderer">Volume Renderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#isosurfaces">Isosurfaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#flow-integration">Flow Integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#slices">Slices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#contours">Contours</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#barbs">Barbs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#two-dimensional-variables">Two Dimensional Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#georefernced-images">Georefernced Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#wireframes">Wireframes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#ancillary-tools">Ancillary Tools</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#animation">Animation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#python-engine">Python Engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#d-plots">2D Plots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage.html#statistics">Statistics</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#renderer-deep-dive">Renderer Deep Dive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ancillary-tools">Ancillary Tools</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contactAndContribute.html">Contact and Contribute</a><ul>

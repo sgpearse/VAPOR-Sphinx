@@ -4,22 +4,22 @@
 Downloads
 =========
 
-Vapor 3.1.0.rc0 
-```````````````
+Current Release: Vapor 3.1.0
+----------------------------
 
-+-----------------+-----------------+-----------------+-----------------+-----------------+
-| Downloads                                                                               |
-+-----------------+-----------------+-----------------+-----------------+-----------------+
-| CentOS7_        | Ubuntu16_       | Ubuntu14_       | OSX_            | Windows10_      |
-+-----------------+-----------------+-----------------+-----------------+-----------------+
++-----------------+-----------------+-----------------+-----------------+
+| Vapor 3.1.0                                                           |
+| July 5, 2019                                                          |
++-----------------+-----------------+-----------------+-----------------+
+| CentOS7_        | Ubuntu18_       | OSX_            | Windows10_      |
++-----------------+-----------------+-----------------+-----------------+
 
-.. _CentOS7: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-CentOS7.sh
-.. _OSX: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Darwin.dmg
-.. _Ubuntu14: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh
-.. _Ubuntu16: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh
-.. _Windows10: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-win64.exe
+.. _CentOS7: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-CentOS.sh
+.. _OSX: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Darwin.dmg
+.. _Ubuntu18: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Ubuntu.sh
+.. _Windows10: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-win64.exe
 
-Release notes for VAPOR-3.1.0.RC0
+Release notes for VAPOR-3.1.0
 
     New Features:
 
@@ -31,8 +31,6 @@ Release notes for VAPOR-3.1.0.RC0
     - Python variable engine
     - Geotiff creation from Vapor renderings
     - Support for MPAS-A and MOM6 models
-
-Note: This Release Candidate contains known issues with Windows drivers for Intel based graphics cards, Iris in particular.  We are working on a resolution.  You can keep track of our progress with our issue tracker on GitHub.
 
 |
 
@@ -122,3 +120,38 @@ Link to sample data 3
 Link to sample data 4
 
 |
+
+Previous Releases
+-----------------
+
+Vapor 3.1.0.rc0 
+```````````````
+
++-----------------+-----------------+-----------------+-----------------+-----------------+
+| Vapor 3.1.0.rc0                                                                         |
+| February 8, 2019                                                                        |
++-----------------+-----------------+-----------------+-----------------+-----------------+
+| CentOS7_        | Ubuntu16_       | Ubuntu14_       | OSX_            | Windows10_      |
++-----------------+-----------------+-----------------+-----------------+-----------------+
+
+.. _CentOS7: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-CentOS7.sh
+.. _OSX: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Darwin.dmg
+.. _Ubuntu14: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh
+.. _Ubuntu16: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh
+.. _Windows10: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-win64.exe
+
+Release notes for VAPOR-3.1.0.RC0
+
+    New Features:
+
+    - 3D Variable Support
+    - Direct Volume Renderer
+    - Isosurfaces
+    - Slice Renderer
+    - Wireframe Renderer
+    - Python variable engine
+    - Geotiff creation from Vapor renderings
+    - Support for MPAS-A and MOM6 models
+
+Note: This Release Candidate contains known issues with Windows drivers for Intel based graphics cards, Iris in particular.  We are working on a resolution.  You can keep track of our progress with our issue tracker on GitHub.
+

@@ -45,7 +45,7 @@ To load data, do one of the following from the ``File`` menu:
 +------------------------------------------------+----+------------------------------------------------+
 | Loading a .vdc file                            |    | Importing data                                 |
 +------------------------------------------------+----+------------------------------------------------+
-| .. image :: loadData.png                       | or | .. image :: importData.png                     |
+| .. image :: loadData.png                       | or | .. image :: importWRF.png                      |
 +------------------------------------------------+----+------------------------------------------------+
 
 Creating a Renderer

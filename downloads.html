@@ -83,16 +83,19 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Downloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#vapor-3-1-0-rc0">Vapor 3.1.0.rc0</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#installation-instructions">Installation Instructions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#building-from-source">Building From Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sample-data">Sample Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-release-vapor-3-1-0">Current Release: Vapor 3.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-instructions">Installation Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-from-source">Building From Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-data">Sample Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#previous-releases">Previous Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vapor-3-1-0-rc0">Vapor 3.1.0.rc0</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quickStartGuide.html">Quick Start Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingDataIntoVapor.html">Getting Data into Vapor3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using Vapor 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contactAndContribute.html">Contact and Contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="licenseAndCitation.html">License and Citation</a></li>
 </ul>
@@ -161,28 +164,27 @@
             
   <div class="section" id="downloads">
 <span id="id1"></span><h1>Downloads<a class="headerlink" href="#downloads" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="vapor-3-1-0-rc0">
-<h2>Vapor 3.1.0.rc0<a class="headerlink" href="#vapor-3-1-0-rc0" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="current-release-vapor-3-1-0">
+<h2>Current Release: Vapor 3.1.0<a class="headerlink" href="#current-release-vapor-3-1-0" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td colspan="5">Downloads</td>
+<tr class="row-odd"><td colspan="4">Vapor 3.1.0
+July 5, 2019</td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-CentOS7.sh">CentOS7</a></td>
-<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh">Ubuntu16</a></td>
-<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh">Ubuntu14</a></td>
-<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Darwin.dmg">OSX</a></td>
-<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-win64.exe">Windows10</a></td>
+<tr class="row-even"><td><a href="#id5"><span class="problematic" id="id6">CentOS7_</span></a></td>
+<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Ubuntu.sh">Ubuntu18</a></td>
+<td><a href="#id7"><span class="problematic" id="id8">OSX_</span></a></td>
+<td><a href="#id9"><span class="problematic" id="id10">Windows10_</span></a></td>
 </tr>
 </tbody>
 </table>
-<p>Release notes for VAPOR-3.1.0.RC0</p>
+<p>Release notes for VAPOR-3.1.0</p>
 <blockquote>
 <div><p>New Features:</p>
 <ul class="simple">
@@ -196,12 +198,12 @@
 <li>Support for MPAS-A and MOM6 models</li>
 </ul>
 </div></blockquote>
-<p>Note: This Release Candidate contains known issues with Windows drivers for Intel based graphics cards, Iris in particular.  We are working on a resolution.  You can keep track of our progress with our issue tracker on GitHub.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</div>
 <div class="section" id="installation-instructions">
-<span id="installationinstructions"></span><h3>Installation Instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h3>
+<span id="installationinstructions"></span><h2>Installation Instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h2>
 <p><strong>Linux</strong></p>
 <p>Run the downloaded .sh script in a terminal window.  It will prompt you as to where the binaries will be installed. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">sh</span> <span class="n">VAPOR3</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mf">0.</span><span class="n">beta</span><span class="o">-</span><span class="n">RH7</span><span class="o">.</span><span class="n">sh</span>
@@ -216,7 +218,7 @@
 </div>
 </div>
 <div class="section" id="building-from-source">
-<span id="buildfromsource"></span><h3>Building From Source<a class="headerlink" href="#building-from-source" title="Permalink to this headline">¶</a></h3>
+<span id="buildfromsource"></span><h2>Building From Source<a class="headerlink" href="#building-from-source" title="Permalink to this headline">¶</a></h2>
 <p>Link to GitHub</p>
 <p>List of third-party libraries and flags used to build</p>
 <p>Link to windows precompiled libraries</p>
@@ -297,7 +299,7 @@
 </div>
 </div>
 <div class="section" id="sample-data">
-<span id="sampledata"></span><h3>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h3>
+<span id="sampledata"></span><h2>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this headline">¶</a></h2>
 <p>Link to sample data 1</p>
 <p>Link to sample data 2</p>
 <p>Link to sample data 3</p>
@@ -305,6 +307,46 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</div>
+<div class="section" id="previous-releases">
+<h2>Previous Releases<a class="headerlink" href="#previous-releases" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="vapor-3-1-0-rc0">
+<h3>Vapor 3.1.0.rc0<a class="headerlink" href="#vapor-3-1-0-rc0" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td colspan="5">Vapor 3.1.0.rc0
+February 8, 2019</td>
+</tr>
+<tr class="row-even"><td><a href="#id11"><span class="problematic" id="id12">CentOS7_</span></a></td>
+<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh">Ubuntu16</a></td>
+<td><a class="reference external" href="https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh">Ubuntu14</a></td>
+<td><a href="#id13"><span class="problematic" id="id14">OSX_</span></a></td>
+<td><a href="#id15"><span class="problematic" id="id16">Windows10_</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>Release notes for VAPOR-3.1.0.RC0</p>
+<blockquote>
+<div><p>New Features:</p>
+<ul class="simple">
+<li>3D Variable Support</li>
+<li>Direct Volume Renderer</li>
+<li>Isosurfaces</li>
+<li>Slice Renderer</li>
+<li>Wireframe Renderer</li>
+<li>Python variable engine</li>
+<li>Geotiff creation from Vapor renderings</li>
+<li>Support for MPAS-A and MOM6 models</li>
+</ul>
+</div></blockquote>
+<p>Note: This Release Candidate contains known issues with Windows drivers for Intel based graphics cards, Iris in particular.  We are working on a resolution.  You can keep track of our progress with our issue tracker on GitHub.</p>
 </div>
 </div>
 </div>
