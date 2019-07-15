@@ -219,9 +219,18 @@ July 5, 2019</td>
 </div>
 <div class="section" id="building-from-source">
 <span id="buildfromsource"></span><h2>Building From Source<a class="headerlink" href="#building-from-source" title="Permalink to this headline">¶</a></h2>
-<p>Link to GitHub</p>
-<p>List of third-party libraries and flags used to build</p>
-<p>Link to windows precompiled libraries</p>
+<p><strong>Step 1 - Download the source code</strong></p>
+<p>Vapor’s current master branch source code can be downloaded from <a class="reference external" href="https://github.com/NCAR/vapor">GitHub</a>.</p>
+<p><strong>Step 2 - Install Vapor’s third party libraries</strong></p>
+<p>Windows users may download the libraries <a class="reference external" href="https://drive.google.com/open?id=1yPE-7stLWsfaVGv1S4aiYFfS6kR_k4y5">here</a>.</p>
+<p><em>Linux and OSX</em></p>
+<p>If building on Linux or OSX, third party libraries are unable to be written to arbitrary directory locations.  If you choose do download the pre-built libraries, they must be unpacked in the following directories:</p>
+<p>OSX: /glade/p/VAST/VAPOR/third-party/apps-2017/Darwin_x86_64/
+Linux: /glade/p/VAST/VAPOR/third-party/apps-2017/Linux_x86_64/</p>
+<p><a class="reference external" href="https://drive.google.com/open?id=1JHl6kHkBvbd17BUC-9nvWZupjyWfwyw7">Link to OSX third-party libraries</a>
+<a class="reference external" href="https://drive.google.com/open?id=0B0dQMtxB89M0azF5RW1RSE5qcTg">Link to Ubuntu third-party libraries</a>
+<a class="reference external" href="https://drive.google.com/open?id=1_JdUuiy_iQUuIDoPyBn2pupBTz-LS4pM">Link to CentOS third-party libraries</a></p>
+<p>Alternatively, you can build the libraries youself and store them wherever you want.  If you choose to do this, you must also configure CMake to point to your custom directory.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="21%" />
@@ -294,6 +303,21 @@ July 5, 2019</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Step 3 - Set up your compiler</strong></p>
+<p>The following compilers are required to build Vapor.</p>
+<p>Ubuntu/CentOS - GCC 4.8.5 or higher
+Windows - Microsoft Visual Studio 2015, version 14</p>
+<p><strong>Step 4 - Configure CMake</strong></p>
+<p>CMake version 3.2 or higher is required on all platforms.  If you chose to build the third party libraries manually, CMake must be configured to point to those libraries wither with the CMake GUI (Windows) or the ccmake command (OSX and Linux).  Run either the GUI or ccmake on the directory where your source code resides to configure the build process.</p>
+<p><strong>Step 5 - Run CMake</strong></p>
+<p>On all operating systems, create a directory where the build will take place.</p>
+<p>On Windows, enter this directory as the “Where to build the binaries” field in the GUI.  Click <em>Configure</em>, <em>Generate</em>, and then <em>Open Project</em> in that order.  Visual Studio will open, and you can build the target <em>PACKAGE</em> to compile the source code.</p>
+<p>On OSX and Linux, navigate to your build directory and type <em>cmake &lt;build_directory&gt; &amp;&amp; make</em>, where &lt;build_directory&gt; is where your build is taking place.</p>
+<p><strong>Step 6 - Build an installer</strong></p>
+<p>Edit the file <em>CMakeLists.txt</em> in the root of your source code directory, so that the field <em>CMAKE_BUILD_TYPE Debug</em> is changed to <em>CMAKE_BUILD_TYPE Release</em>.  Also change the field <em>DIST_INSTALLER OFF</em> to be <em>DIST_INSTALLER ON</em>.</p>
+<p>On Windows, make sure that the build is taking place in <em>Release</em> mode, not <em>Debug</em>, and build the target <em>PACKAGE</em>.</p>
+<p>On OSX, run <em>cmake &lt;build_directory&gt; &amp;&amp; make &amp;&amp; make installer</em> from your build directory.</p>
+<p>On Linux, run  <em>cmake &lt;build_directory&gt; &amp;&amp; make linuxpreinstall &amp;&amp; make installer</em> from your build directory.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

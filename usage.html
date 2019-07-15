@@ -118,7 +118,19 @@
 <li class="toctree-l3"><a class="reference internal" href="#georeferenced-images">Georeferenced Images</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#ancillary-tools">Ancillary Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#navigation-settings">Navigation Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#annotations">Annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animation">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewpoint">Viewpoint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#global-settings">Global Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ancillary-tools">Ancillary Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-engine">Python Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-plots">2D Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#statistics">Statistics</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contactAndContribute.html">Contact and Contribute</a></li>
@@ -422,26 +434,65 @@
 </div>
 </div>
 </div>
+<div class="section" id="navigation-settings">
+<h2>Navigation Settings<a class="headerlink" href="#navigation-settings" title="Permalink to this headline">¶</a></h2>
+<p>At the top level of Vapor’s control menu, there is a top-level tab called Navigation, which contains settings that help users identify and visualize where they are in the scene.  The Navigation tab is composed of an Annotation tab, and a Viewpoint tab.</p>
+<div class="section" id="annotations">
+<h3>Annotations<a class="headerlink" href="#annotations" title="Permalink to this headline">¶</a></h3>
+<p>In the Annotaitons tab, users can add Axis Annotations, Time Annotations, and 3D arrows that indicate which direction the X, Y, and Z axes are oriented in.  Users can also control whether they want to render bounding boxes that indicate the extents of their domain.</p>
+</div>
+<div class="section" id="animation">
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">¶</a></h3>
+<p>Currently in development.</p>
+</div>
+<div class="section" id="viewpoint">
+<h3>Viewpoint<a class="headerlink" href="#viewpoint" title="Permalink to this headline">¶</a></h3>
+<p>The Viewpoint tab contains tools that let the user apply global transforms to datasets that they have loaded.  This is similar to how individual renderers can be transformed, but in this case the transform applies to all renderers in a dataset.</p>
+<p>Projection strings can also be modified if a dataset is georeferenced.</p>
+<p>Finally, camera position and direction values are displayed here and may be changed numerically for convenience.</p>
+<div class="align-center figure" id="id21">
+<a class="reference internal image-reference" href="viewpointTab.png"><img alt="viewpointTab.png" src="viewpointTab.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">The Viewpoint Tab, within the top-level Navigation tab</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="global-settings">
+<h2>Global Settings<a class="headerlink" href="#global-settings" title="Permalink to this headline">¶</a></h2>
+<p>The last top-level tab next to the Renderers and Navigation tabs is called Settings.  This is where Vapor’s session file save frequency is set, as well as programatic settings like window sizes and cache sizes.</p>
+<div class="align-center figure" id="id22">
+<a class="reference internal image-reference" href="settingsTab.png"><img alt="settingsTab.png" src="settingsTab.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">The top-level Settings Tab</span></p>
+</div>
+</div>
 <div class="section" id="ancillary-tools">
 <h2>Ancillary Tools<a class="headerlink" href="#ancillary-tools" title="Permalink to this headline">¶</a></h2>
 <p>Vapor comes with a Tools menu that provides utilities that can help with visualization and analysis</p>
+<div class="section" id="python-engine">
+<h3>Python Engine<a class="headerlink" href="#python-engine" title="Permalink to this headline">¶</a></h3>
 <p>The Python Engine is a tool that allows users to derive new variables based on the data that exist in their files.  Users need to select input variables that will be read in their script, and they will need to define an output variable.  If the script successfully run by the Python Engine, the output variable will be usable in the same way as the native variables are in the dataset.</p>
 <p>Note: Input variables must exist on the same grid to produce a valid output.</p>
 <div class="align-center figure">
 <a class="reference internal image-reference" href="pythonEditor.png"><img alt="pythonEditor.png" src="pythonEditor.png" style="width: 500px;" /></a>
 </div>
+</div>
+<div class="section" id="d-plots">
+<h3>2D Plots<a class="headerlink" href="#d-plots" title="Permalink to this headline">¶</a></h3>
 <p>Users can generate two-dimensional line lots of their variables using the Plot Utility.  Line plots can be done either through two points in space at a single timestep, or through a single point across a timespan.</p>
-<div class="align-center figure" id="id21">
+<div class="align-center figure" id="id23">
 <a class="reference internal image-reference" href="plotUtility.png"><img alt="plotUtility.png" src="plotUtility.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">The user interface for hte Plot Utility</span></p>
 </div>
-<div class="align-center figure" id="id22">
+<div class="align-center figure" id="id24">
 <a class="reference internal image-reference" href="plot.png"><img alt="plot.png" src="plot.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">An example of a line plot of Pressure through the spatial domain, at timestep 0</span></p>
 </div>
+</div>
+<div class="section" id="statistics">
+<h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h3>
 <p>Statistical values can help users select meaningful values for renderer color extents, isosurface values, and contour values.  Vapor currently supports calculating the minimum, maximum, mean, median, and mode for variables.  The spatial and temporal extents of the variables being queried is adjustable by the user.</p>
 <div class="align-center figure">
 <a class="reference internal image-reference" href="statistics.png"><img alt="statistics.png" src="statistics.png" style="width: 500px;" /></a>
+</div>
 </div>
 </div>
 </div>
