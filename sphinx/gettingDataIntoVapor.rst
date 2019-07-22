@@ -19,7 +19,7 @@ Users can either load VDC, or import their data through Vapor's ``File`` menu.
 +------------------------------------------------+----+------------------------------------------------+
 | Loading a .vdc file                            |    | Importing data                                 |
 +------------------------------------------------+----+------------------------------------------------+
-| .. image :: loadData.png                       | or | .. image :: importWRF.png                      |
+| .. image :: ../loadData.png                    | or | .. image :: ../importWRF.png                   |
 +------------------------------------------------+----+------------------------------------------------+
 
 .. _vdc:
@@ -50,8 +50,7 @@ _________________________________
 
 In the directory where Vapor 3 is installed, there is a command line utility called ``wrfvdccreate``.  Issue this command in a terminal (Unix) or command prompt (Windows), followed by your WRF-ARW files, and finally the name of the .vdc file to be written.
 
-.. figure:: wrfvdccreate.png
-    :scale: 25
+.. figure:: ../wrfvdccreate.png
     :align: center
     :figclass: align-center
 
@@ -62,8 +61,7 @@ _____________________________
 
 Once we have a .vdc file, the metadata has been recorded and we can apply the wavelet transform.  From Vapor 3's installation directory, issue the command ``wrf2vdc``, followed by your WRF-ARW files, and finally followed by the .vdc file that was made in Step 1.
 
-.. figure:: wrf2vdc.png
-    :scale: 25
+.. figure:: ../wrf2vdc.png
     :align: center
     :figclass: align-center
 
@@ -146,8 +144,7 @@ _________________________________
 
 To make a VDC from scratch, users need to carefully read all options in the ``vdccreate`` utility, and define their .vdc metadata file accordingly.
 
-.. figure:: vdccreate.png
-    :scale: 25
+.. figure:: ../vdccreate.png
     :align: center
     :figclass: align-center
 
@@ -158,8 +155,7 @@ _____________________________
 
 Now that a .vdc metadata file has been created, the wavelet decomposition can take place.  Each variable must be converted individually with ``raw2vdc``, and this must be done one timestep at a time.
 
-.. figure:: raw2vdc.png
-    :scale: 25
+.. figure:: ../raw2vdc.png
     :align: center
     :figclass: align-center
 

@@ -197,10 +197,10 @@
 <td>&#160;</td>
 <td>Importing data</td>
 </tr>
-<tr class="row-even"><td><img alt="loadData.png" class="first last" src="loadData.png" />
+<tr class="row-even"><td><img alt="_images/loadData.png" class="first last" src="_images/loadData.png" />
 </td>
 <td>or</td>
-<td><img alt="importWRF.png" class="first last" src="importWRF.png" />
+<td><img alt="_images/importWRF.png" class="first last" src="_images/importWRF.png" />
 </td>
 </tr>
 </tbody>
@@ -221,7 +221,7 @@ Step 2) Apply the wavelet transform to populate your VDC</p>
 <h4>Step 1: Create .vdc metadata file<a class="headerlink" href="#step-1-create-vdc-metadata-file" title="Permalink to this headline">¶</a></h4>
 <p>In the directory where Vapor 3 is installed, there is a command line utility called <code class="docutils literal notranslate"><span class="pre">wrfvdccreate</span></code>.  Issue this command in a terminal (Unix) or command prompt (Windows), followed by your WRF-ARW files, and finally the name of the .vdc file to be written.</p>
 <div class="align-center figure" id="id5">
-<a class="reference internal image-reference" href="wrfvdccreate.png"><img alt="wrfvdccreate.png" src="wrfvdccreate.png" /></a>
+<img alt="_images/wrfvdccreate.png" src="_images/wrfvdccreate.png" />
 <p class="caption"><span class="caption-text">Creating a .vdc metadata file with <code class="docutils literal notranslate"><span class="pre">wrfvdccreate</span></code>.</span></p>
 </div>
 </div>
@@ -229,7 +229,7 @@ Step 2) Apply the wavelet transform to populate your VDC</p>
 <h4>Step 2: The wavelet transform<a class="headerlink" href="#step-2-the-wavelet-transform" title="Permalink to this headline">¶</a></h4>
 <p>Once we have a .vdc file, the metadata has been recorded and we can apply the wavelet transform.  From Vapor 3’s installation directory, issue the command <code class="docutils literal notranslate"><span class="pre">wrf2vdc</span></code>, followed by your WRF-ARW files, and finally followed by the .vdc file that was made in Step 1.</p>
 <div class="align-center figure" id="id6">
-<a class="reference internal image-reference" href="wrf2vdc.png"><img alt="wrf2vdc.png" src="wrf2vdc.png" /></a>
+<img alt="_images/wrf2vdc.png" src="_images/wrf2vdc.png" />
 <p class="caption"><span class="caption-text">Applying the wavelet transform to WRF-ARW data with <code class="docutils literal notranslate"><span class="pre">wrf2vdc</span></code></span></p>
 </div>
 </div>
@@ -301,7 +301,7 @@ Step 2) Apply the wavelet transform to populate your VDC</p>
 <h4>Step 1: Create .vdc metadata file<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <p>To make a VDC from scratch, users need to carefully read all options in the <code class="docutils literal notranslate"><span class="pre">vdccreate</span></code> utility, and define their .vdc metadata file accordingly.</p>
 <div class="align-center figure" id="id7">
-<a class="reference internal image-reference" href="vdccreate.png"><img alt="vdccreate.png" src="vdccreate.png" /></a>
+<img alt="_images/vdccreate.png" src="_images/vdccreate.png" />
 <p class="caption"><span class="caption-text">Command line arguments for vdccreate, seen by issuing the command without any arguments</span></p>
 </div>
 </div>
@@ -309,7 +309,7 @@ Step 2) Apply the wavelet transform to populate your VDC</p>
 <h4>Step 2: The wavelet transform<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Now that a .vdc metadata file has been created, the wavelet decomposition can take place.  Each variable must be converted individually with <code class="docutils literal notranslate"><span class="pre">raw2vdc</span></code>, and this must be done one timestep at a time.</p>
 <div class="align-center figure" id="id8">
-<a class="reference internal image-reference" href="raw2vdc.png"><img alt="raw2vdc.png" src="raw2vdc.png" /></a>
+<img alt="_images/raw2vdc.png" src="_images/raw2vdc.png" />
 <p class="caption"><span class="caption-text">Command line arguments for raw2vdc wavelet transform, seen by issuing the command without any arguments</span></p>
 </div>
 </div>

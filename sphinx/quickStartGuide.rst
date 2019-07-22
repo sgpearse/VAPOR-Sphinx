@@ -6,7 +6,7 @@ Quick Start Guide
 
 Install the version of Vapor3 for your computer's operating system from our :ref:`downloads <downloads>` page.  Updating your system's graphics driver if you're not sure that it's current.
 
-If you don't have :ref:`data that's supported <data>` by Vapor3 yet, you can :ref:`download a sample <sampleData>` to get started with.
+If you don't have :ref:`data that's supported <gettingDataIntoVapor>` by Vapor3 yet, you can :ref:`download a sample <sampleData>` to get started with.
 
 Start Vapor3
 ````````````
@@ -39,13 +39,13 @@ To load data, do one of the following from the ``File`` menu:
 1. Load a .vdc file after converting it into :ref:`VDC`
     ``File->Open VDC``
 
-2. Import your data, if it's one of the natively supported data types (:ref:`WRF`, :ref:`NetCDF-CF`, :ref:`MPAS`)
+2. Import your data, if it's one of the :ref:`natively supported data types <gettingDataIntoVapor>` (WRF, NetCDF-CF, MPAS)
     ``File->Import->[dataType]``
 
 +------------------------------------------------+----+------------------------------------------------+
 | Loading a .vdc file                            |    | Importing data                                 |
 +------------------------------------------------+----+------------------------------------------------+
-| .. image :: loadData.png                       | or | .. image :: importWRF.png                      |
+| .. image :: ../loadData.png                    | or | .. image :: ../importWRF.png                   |
 +------------------------------------------------+----+------------------------------------------------+
 
 Creating a Renderer
@@ -54,8 +54,8 @@ Now that we've loaded some data to visualize, we can create a new :ref:`Renderer
 
 Click on ``New``.  This will raise a window that will let you choose from the currently available renderers.  Pick the Slice Renderer by either double-clicking on the ``Slice`` button.
 
-.. figure:: newRenderer.png
-    :scale: 25 
+.. figure:: ../newRenderer.png
+    :width: 500
     :align: center
     :figclass: align-center
 
@@ -63,8 +63,8 @@ Click on ``New``.  This will raise a window that will let you choose from the cu
 
 Vapor3 displays all of your renderers in a table in the upper left corner of the application.  Next to this table are controls that  let you create ``New`` renderers, ``Delete`` renderers, or ``Duplicate`` existing renderers.  
 
-.. figure:: rendererTable.png
-    :scale: 35
+.. figure:: ../rendererTable.png
+    :width: 500
     :align: center
     :figclass: align-center
 

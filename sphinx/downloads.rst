@@ -4,6 +4,7 @@
 Downloads
 =========
 
+
 Current Release: Vapor 3.1.0
 ----------------------------
 
@@ -11,13 +12,13 @@ Current Release: Vapor 3.1.0
 | Vapor 3.1.0                                                           |
 | July 5, 2019                                                          |
 +-----------------+-----------------+-----------------+-----------------+
-| CentOS7_        | Ubuntu18_       | OSX_            | Windows10_      |
+| `CentOS7`__     | `Ubuntu18`__    | `OSX`__         | `Windows10`__   |
 +-----------------+-----------------+-----------------+-----------------+
 
-.. _CentOS7: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-CentOS.sh
-.. _OSX: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Darwin.dmg
-.. _Ubuntu18: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Ubuntu.sh
-.. _Windows10: https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-win64.exe
+__ https://github.com/NCAR/VAPOR/releases/download/3.1.0/Vapor-3.1.0-CentOS.sh
+__ https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Ubuntu.sh
+__ https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-Darwin.dmg
+__ https://github.com/NCAR/VAPOR/releases/download/3.1.0/VAPOR3-3.1.0-win64.exe
 
 Release notes for VAPOR-3.1.0
 
@@ -179,14 +180,14 @@ Vapor 3.1.0.rc0
 | Vapor 3.1.0.rc0                                                                         |
 | February 8, 2019                                                                        |
 +-----------------+-----------------+-----------------+-----------------+-----------------+
-| CentOS7_        | Ubuntu16_       | Ubuntu14_       | OSX_            | Windows10_      |
+| `CentOS7`__     | `Ubuntu16`__    | `Ubuntu14`__    | `OSX`__         | `Windows10`__   |
 +-----------------+-----------------+-----------------+-----------------+-----------------+
 
-.. _CentOS7: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-CentOS7.sh
-.. _OSX: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Darwin.dmg
-.. _Ubuntu14: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh
-.. _Ubuntu16: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh
-.. _Windows10: https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-win64.exe
+__ https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-CentOS7.sh
+__ https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu16.04.sh
+__ https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Ubuntu14.04.sh
+__ https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-Darwin.dmg
+__ https://github.com/NCAR/VAPOR/releases/download/VAPOR3_1_0_RC0/VAPOR3-3.1.0.RC0-win64.exe
 
 Release notes for VAPOR-3.1.0.RC0
 
