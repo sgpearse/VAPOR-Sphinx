@@ -10,6 +10,8 @@ We recommend that all users either watch our :ref:`Introductory Tutorial <introT
 
 If any feature in Vapor is not sufficienty self describing in the application, this is where to find elaboration.  Please :ref:`contact our team <contactAndContribute>` if you think you may have found a bug, usability issue, or you'd like to request an enhancement.
 
+.. _renderers:
+
 The Renderers
 -------------
 
@@ -103,8 +105,6 @@ Each renderer is unique, the specification of their parameters is mostly the sam
     - :ref:`Geometry <geometryTab>`
     - :ref:`Annotation <annotationTab>`
 
-.. _variablesTab:
-
 See the :ref:`Renderers <renderers>` section for more information on how each of these tabs work for a given renderer.  Again, they all operate in the same way for the most part.
 
 .. figure:: ../_images/variablesTab.png
@@ -113,6 +113,8 @@ See the :ref:`Renderers <renderers>` section for more information on how each of
     :figclass: align-center
 
     Variables tab for the Slice renderer
+
+.. _variablesTab:
 
 Variables Tab
 _____________
@@ -246,8 +248,6 @@ Quantifying the colors to your viewers can be done by adding a colorbar in the A
     An exmaple colorbar
 
 |
-
-.. _renderers:
 
 Unique Renderer Controls
 ------------------------
