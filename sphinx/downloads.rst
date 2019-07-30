@@ -4,6 +4,7 @@
 Downloads
 =========
 
+If you are looking for our legacy version of Vapor 2.6, follow :ref:`this link <vapor2>` to the bottom of the page.
 
 Current Release: Vapor 3.1.0
 ----------------------------
@@ -74,7 +75,7 @@ Untar the three files linked below into the root of your C:\ directory.
 
     `vaporwin64deps2015.tar <https://drive.google.com/a/ucar.edu/file/d/1CHUxsPZYrZPDVqRCT-1qtTEQtZfgTn7u/view?usp=sharing>`_
 
-    `Vapor3rdParty2015.tar <https://drive.google.com/a/ucar.edu/file/d/1ZDK2pDu66XDVhJBpFogdqVgNFIMKsrtM/view?usp=sharing>`
+    `Vapor3rdParty2015.tar <https://drive.google.com/a/ucar.edu/file/d/1ZDK2pDu66XDVhJBpFogdqVgNFIMKsrtM/view?usp=sharing>`_
 
     `Qt-2015.tar <https://drive.google.com/a/ucar.edu/file/d/19RGYew30dH6T6zG3HzfWwck4RZNLXAhp/view?usp=sharing>`_
 
@@ -165,15 +166,11 @@ On Linux, run  *cmake <build_directory> && make linuxpreinstall && make installe
 Sample Data
 -----------
 
-Link to sample data 1
-
-Link to sample data 2
-
-Link to sample data 3
-
-Link to sample data 4
+**Coming soon**
 
 |
+
+.. _vapor2:
 
 Vapor 2
 -------
@@ -182,4 +179,4 @@ If you are interested in using Vapor 2, it can be `downloaded after filling out 
 
 Vapor 2 is deprecated, and we strongly encourage users to download the currently supported releases of Vapor 3.
 
-Legacy documentation for Vapor 2 can be found `here <https://ncar.github.io/vapor2website/index.html>`_.  Please note that this website is no longer supported, and some links may be broken.  Use at your own discretion.
+`Legacy documentation for Vapor 2 can be found here <https://ncar.github.io/vapor2website/index.html>`_.  Please note that this website is no longer supported, and some links may be broken.  Use at your own discretion.
